@@ -30,7 +30,7 @@ class VOCDataset(Dataset):
 
     
     #TODO: Ensure data directories are correct
-    def __init__(self, split='trainval', image_size=224, top_n=300, data_dir='data/VOCdevkit/VOC2007/'):
+    def __init__(self, split='trainval', image_size=224, top_n=300, data_dir='../data/VOCdevkit/VOC2007/'):
         super().__init__()
         self.split      = split     # 'trainval' or 'test'
         self.data_dir   = data_dir
@@ -41,7 +41,7 @@ class VOCDataset(Dataset):
         
         self.img_dir = os.path.join(data_dir, 'JPEGImages')
         self.ann_dir = os.path.join(data_dir, 'Annotations')
-        self.selective_search_dir = os.path.join("data/VOCdevkit/VOC2007/", 'selective_search_data')
+        self.selective_search_dir = os.path.join("../data/VOCdevkit/VOC2007/", 'selective_search_data')
 
         self.roi_data = scipy.io.loadmat(self.selective_search_dir + '/voc_2007_'+ split + '.mat')
 
@@ -150,7 +150,6 @@ class VOCDataset(Dataset):
 
         # added for assn 2
         gt_class_list, gt_boxes = self.anno_list[index][2], self.anno_list[index][3]
-
         
         '''
         TODO:
@@ -158,8 +157,21 @@ class VOCDataset(Dataset):
         Normalize in the range (0, 1) according to image size (be careful of width/height and x/y correspondences)
         Make sure to return only the top_n proposals!
         '''
+        proposals = np.empty((self.top_n,1))
+        boxes = self.roi_data['boxes'][0,index]
+        box_scores = self.roi_data['boxScores'][0,index]
+        ind = np.argpartition(box_scores, -self.top_n, axis=0)[-self.top_n:]
+        top_boxes = boxes[ind]
+        y1 = top_boxes[:,0][:,0] 
+        y2 = top_boxes[:,0][:,2] 
+        x1 = top_boxes[:,0][:,1] 
+        x2 = top_boxes[:,0][:,3] 
 
-
+        proposals = np.concatenate((proposals, np.divide(y1,height).reshape(self.top_n,1)), axis=1)
+        proposals = np.concatenate((proposals, np.divide(x1,width).reshape(self.top_n,1)), axis=1)
+        proposals = np.concatenate((proposals, np.divide(y2,height).reshape(self.top_n,1)), axis=1)
+        proposals = np.concatenate((proposals, np.divide(x2,width).reshape(self.top_n,1)), axis=1)
+        proposals = proposals[:, 1:]
 
         ret = {}
 
