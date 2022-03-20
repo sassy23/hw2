@@ -1,0 +1,28 @@
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 425, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 247, in train
+    for i, (data) in enumerate(train_loader):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+RuntimeError: Caught RuntimeError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 74, in default_collate
+    return {key: default_collate([d[key] for d in batch]) for key in elem}
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 74, in <dictcomp>
+    return {key: default_collate([d[key] for d in batch]) for key in elem}
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/collate.py", line 82, in default_collate
+    raise RuntimeError('each element in list of batch should be of equal size')
+RuntimeError: each element in list of batch should be of equal size

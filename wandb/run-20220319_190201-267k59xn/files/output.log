@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 393, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 244, in train
+    for i, (data) in enumerate(train_loader):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+ValueError: Caught ValueError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/CMU/VLR/hw2/voc_dataset.py", line 163, in __getitem__
+    ind = np.argpartition(box_scores, -self.top_n, axis=0)[-self.top_n:]
+  File "<__array_function__ internals>", line 5, in argpartition
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 839, in argpartition
+    return _wrapfunc(a, 'argpartition', kth, axis=axis, kind=kind, order=order)
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: kth(=-10) out of bounds (290)

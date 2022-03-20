@@ -1,0 +1,38 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Epoch: [0][0/5011]	Time 1.483 (1.483)	Data 0.024 (0.024)	Loss 0.9562 (0.9562)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][10/5011]	Time 0.042 (0.173)	Data 0.008 (0.010)	Loss 0.7242 (0.7452)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][20/5011]	Time 0.042 (0.111)	Data 0.007 (0.009)	Loss 0.7242 (0.7352)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][30/5011]	Time 0.042 (0.089)	Data 0.009 (0.009)	Loss 0.6742 (0.7252)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][40/5011]	Time 0.042 (0.078)	Data 0.007 (0.008)	Loss 0.6742 (0.7237)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][50/5011]	Time 0.043 (0.071)	Data 0.008 (0.008)	Loss 0.7242 (0.7218)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][60/5011]	Time 0.042 (0.066)	Data 0.008 (0.008)	Loss 0.7242 (0.7214)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][70/5011]	Time 0.042 (0.063)	Data 0.007 (0.008)	Loss 0.7242 (0.7218)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][80/5011]	Time 0.042 (0.061)	Data 0.007 (0.008)	Loss 0.7242 (0.7215)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][90/5011]	Time 0.042 (0.059)	Data 0.008 (0.008)	Loss 0.7242 (0.7218)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 425, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 247, in train
+    for i, (data) in enumerate(train_loader):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 561, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/CMU/VLR/hw2/voc_dataset.py", line 163, in __getitem__
+    ind = np.argpartition(box_scores, -self.top_n, axis=0)[-self.top_n:]
+  File "<__array_function__ internals>", line 5, in argpartition
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 839, in argpartition
+    return _wrapfunc(a, 'argpartition', kth, axis=axis, kind=kind, order=order)
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: kth(=-10) out of bounds (290)
+Epoch: [0][100/5011]	Time 0.042 (0.057)	Data 0.007 (0.008)	Loss 0.6742 (0.7210)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][110/5011]	Time 0.042 (0.056)	Data 0.008 (0.008)	Loss 0.7242 (0.7204)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][120/5011]	Time 0.042 (0.055)	Data 0.008 (0.008)	Loss 0.7242 (0.7195)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)

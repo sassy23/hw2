@@ -179,7 +179,7 @@ class VOCDataset(Dataset):
         ret['label']    = label
         ret['wgt']      = wgt
         ret['rois']     = proposals
-        ret['gt_boxes'] = gt_boxes
-        ret['gt_classes'] = gt_class_list
+        # ret['gt_boxes'] = gt_boxes
+        # ret['gt_classes'] = gt_class_list
 
         return ret

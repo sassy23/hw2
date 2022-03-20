@@ -1,0 +1,16 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 415, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 264, in train
+    loss = criterion(output, gt_class_list)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/modules/loss.py", line 713, in forward
+    return F.binary_cross_entropy_with_logits(input, target,
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py", line 2957, in binary_cross_entropy_with_logits
+    if not (target.size() == input.size()):
+AttributeError: 'list' object has no attribute 'size'

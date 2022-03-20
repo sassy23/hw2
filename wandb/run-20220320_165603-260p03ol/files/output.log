@@ -1,0 +1,416 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][0/156]	Time 9.074 (9.074)	Data 1.442 (1.442)	Loss 0.6994 (0.6994)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][10/156]	Time 0.506 (1.269)	Data 0.295 (0.380)	Loss 0.6950 (0.6970)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][20/156]	Time 0.517 (0.906)	Data 0.306 (0.340)	Loss 0.6917 (0.6950)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][30/156]	Time 0.541 (0.780)	Data 0.301 (0.326)	Loss 0.6891 (0.6934)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][40/156]	Time 0.523 (0.720)	Data 0.306 (0.321)	Loss 0.6860 (0.6919)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][50/156]	Time 0.504 (0.681)	Data 0.294 (0.317)	Loss 0.6834 (0.6905)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+Epoch: [0][60/156]	Time 0.517 (0.654)	Data 0.296 (0.315)	Loss 0.6811 (0.6891)	Metric1 nan (nan)	Metric2 0.000 (0.000)
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide
+  recall = tps / tps[-1]
+/home/oem/.local/lib/python3.8/site-packages/sklearn/metrics/_ranking.py:817: RuntimeWarning: invalid value encountered in true_divide

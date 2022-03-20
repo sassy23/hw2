@@ -1,4 +1,5 @@
 import argparse
+from cmath import nan
 import os
 import shutil
 import time
@@ -128,6 +129,11 @@ def main():
     args = parser.parse_args()
     args.distributed = args.world_size > 1
 
+    args.batch_size = 32
+    args.lr = 0.01
+    args.pretrained = True
+    args.epochs = 2
+
     # create model
     print("=> creating model '{}'".format(args.arch))
     if args.arch == 'localizer_alexnet':
@@ -143,7 +149,9 @@ def main():
     # define loss function (criterion) and optimizer
     # also use an LR scheduler to decay LR by 10 every 30 epochs
     # you can also use PlateauLR scheduler, which usually works well
-
+    criterion = torch.nn.BCELoss()
+    optimizer = torch.optim.SGD(model.parameters(), lr=args.lr)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=30, gamma=0.1)
 
 
     # optionally resume from a checkpoint
@@ -172,6 +180,7 @@ def main():
 
 
     train_sampler = None
+    train_dataset = VOCDataset('trainval', image_size=512, top_n=30)
     train_loader = torch.utils.data.DataLoader(
         train_dataset,
         batch_size=args.batch_size,
@@ -182,6 +191,7 @@ def main():
         sampler=train_sampler,
         drop_last=True)
 
+    val_dataset = VOCDataset('test', image_size=512, top_n=30)
     val_loader = torch.utils.data.DataLoader(
         val_dataset,
         batch_size=args.batch_size,
@@ -197,13 +207,17 @@ def main():
     
     
     # TODO: Create loggers for wandb - ideally, use flags since wandb makes it harder to debug code.
-
+    wandb.init(project="vlr-hw2")
+    
 
     for epoch in range(args.start_epoch, args.epochs):
-        adjust_learning_rate(optimizer, epoch)
+        # adjust_learning_rate(optimizer, epoch)
 
         # train for one epoch
         train(train_loader, model, criterion, optimizer, epoch)
+
+        if scheduler is not None:
+            scheduler.step()
 
         # evaluate on validation set
         if epoch % args.eval_freq == 0 or epoch == args.epochs - 1:
@@ -241,25 +255,44 @@ def train(train_loader, model, criterion, optimizer, epoch):
         data_time.update(time.time() - end)
 
         # TODO: Get inputs from the data dict
-
+        img  = data['image'].to('cuda')    
+        label = data['label'].to('cuda')    
+        wgt = data['wgt'] 
+        # proposals = data['rois'] 
+        # gt_boxes = data['gt_boxes']
+        # gt_class_list = data['gt_classes'] 
 
         # TODO: Get output from model
+        optimizer.zero_grad()
+        output = model(img)
         # TODO: Perform any necessary functions on the output such as clamping
         # TODO: Compute loss using ``criterion``
-        
+        # print(output.shape)
+        n,c,h,w = output.shape
+        output = nn.MaxPool2d(kernel_size=(h,w))(output)
+        output = torch.reshape(output, (n,c))
+        output = torch.sigmoid(output)
+        loss = criterion(output, label)
 
 
         # measure metrics and record loss
-        m1 = metric1(imoutput.data, target)
-        m2 = metric2(imoutput.data, target)
-        losses.update(loss.item(), input.size(0))
-        avg_m1.update(m1)
-        avg_m2.update(m2)
+        target = label
+        m1 = metric1(output, target)
+        m2 = metric2(output, target)
+        losses.update(loss.item(), img.size(0))
+        if m1==nan:
+            pass
+        else:
+            avg_m1.update(m1)
+            avg_m2.update(m2)
 
 
         # TODO:
         # compute gradient and do SGD step
-
+        # Calculate gradient w.r.t the loss
+        loss.backward()
+        # Optimizer takes one step
+        optimizer.step()
 
         # measure elapsed time
         batch_time.update(time.time() - end)
@@ -282,8 +315,11 @@ def train(train_loader, model, criterion, optimizer, epoch):
                       avg_m2=avg_m2))
 
         #TODO: Visualize/log things as mentioned in handout
+        wandb.log({"train/loss": loss.item(), "epoch": epoch})
         #TODO: Visualize at appropriate intervals
-
+        # if i==80 or i==150:
+        #     im = data['label'][10]
+        #     wandb.log({"img": [wandb.Image(im)]})
 
 
 
@@ -303,21 +339,37 @@ def validate(val_loader, model, criterion, epoch = 0):
     for i, (data) in enumerate(val_loader):
 
         # TODO: Get inputs from the data dict
-        
+        img  = data['image'].to('cuda')    
+        label = data['label'].to('cuda')    
+        wgt = data['wgt'] 
+        # proposals = data['rois'] 
+        # gt_boxes = data['gt_boxes']
+        # gt_class_list = data['gt_classes'] 
 
 
         # TODO: Get output from model
+        output = model(img)
+        print(output.shape)
         # TODO: Perform any necessary functions on the output
         # TODO: Compute loss using ``criterion``
+        n,c,h,w = output.shape
+        output = nn.MaxPool2d(kernel_size=(h,w))(output)
+        output = torch.reshape(output, (n,c))
+        output = torch.sigmoid(output)
+        loss = criterion(output, label)
         
 
 
         # measure metrics and record loss
-        m1 = metric1(imoutput.data, target)
-        m2 = metric2(imoutput.data, target)
-        losses.update(loss.item(), input.size(0))
-        avg_m1.update(m1)
-        avg_m2.update(m2)
+        target = label
+        m1 = metric1(output, target)
+        m2 = metric2(output, target)
+        losses.update(loss.item(), img.size(0))
+        if m1==nan:
+            pass
+        else:
+            avg_m1.update(m1)
+            avg_m2.update(m2)
 
         # measure elapsed time
         batch_time.update(time.time() - end)
@@ -374,14 +426,30 @@ class AverageMeter(object):
 
 def metric1(output, target):
     # TODO: Ignore for now - proceed till instructed
-    
-    return [0]
+    # target = target.cpu().detach().numpy()
+    # output = output.cpu().detach().numpy()
+    # nclasses = target.shape[1]    
+    # AP = []
+    # for cid in range(nclasses):
+    #     gt_cls = target[:, cid].astype('float32')
+    #     pred_cls = output[:, cid].astype('float32')
+    #     pred_cls -= 1e-5 * gt_cls
+    #     ap = sklearn.metrics.average_precision_score(
+    #         gt_cls, pred_cls, average=None)
+    #     AP.append(ap)
+    # mAP = np.mean(AP)
+
+    # return mAP
+    return 0
 
 
 def metric2(output, target):
     #TODO: Ignore for now - proceed till instructed
-    
-    return [0]
+    target = np.argmax(target.cpu().detach().numpy(), axis=1)
+    output = np.argmax(output.cpu().detach().numpy(), axis=1)
+    sklearn.metrics.recall_score(target, output, average='micro')
+
+    return 0
 
 
 if __name__ == '__main__':

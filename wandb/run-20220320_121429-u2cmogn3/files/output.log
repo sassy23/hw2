@@ -1,0 +1,25 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Epoch: [0][0/156]	Time 8.157 (8.157)	Data 0.981 (0.981)	Loss 0.7148 (0.7148)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][10/156]	Time 0.462 (1.137)	Data 0.000 (0.089)	Loss 0.7147 (0.7146)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][20/156]	Time 0.452 (0.812)	Data 0.000 (0.047)	Loss 0.7147 (0.7145)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][30/156]	Time 0.452 (0.697)	Data 0.000 (0.032)	Loss 0.7148 (0.7145)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 425, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 252, in train
+    img  = data['image'].to('cuda')
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/oem/anaconda3/lib/python3.8/multiprocessing/queues.py", line 245, in _feed
+    send_bytes(obj)
+  File "/home/oem/anaconda3/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/oem/anaconda3/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/oem/anaconda3/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+Epoch: [0][40/156]	Time 0.453 (0.638)	Data 0.000 (0.024)	Loss 0.7143 (0.7145)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)

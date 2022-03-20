@@ -1,0 +1,31 @@
+{
+    "os": "Linux-5.13.0-35-generic-x86_64-with-glibc2.10",
+    "python": "3.8.8",
+    "heartbeatAt": "2022-03-20T02:36:08.175152",
+    "startedAt": "2022-03-20T02:36:07.061647",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 960M",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--batch-size",
+        "1",
+        "--lr",
+        "0.01",
+        "--epochs",
+        "2"
+    ],
+    "state": "running",
+    "program": "/home/oem/CMU/VLR/hw2/task_1.py",
+    "codePath": "task_1.py",
+    "git": {
+        "remote": "git@github.com:sassy23/hw2.git",
+        "commit": "a705b7cac7fd8b506290793a471abe5ecb7b4c64"
+    },
+    "email": "sundaram.seivur@gmail.com",
+    "root": "/home/oem/CMU/VLR/hw2",
+    "host": "sas",
+    "username": "oem",
+    "executable": "/home/oem/anaconda3/bin/python"
+}

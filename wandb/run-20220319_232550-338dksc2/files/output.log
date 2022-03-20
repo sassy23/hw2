@@ -1,0 +1,46 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Epoch: [0][0/5011]	Time 1.628 (1.628)	Data 0.185 (0.185)	Loss 0.9569 (0.9569)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][10/5011]	Time 0.042 (0.185)	Data 0.000 (0.017)	Loss 0.7242 (0.7481)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][20/5011]	Time 0.043 (0.118)	Data 0.000 (0.009)	Loss 0.7242 (0.7367)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][30/5011]	Time 0.043 (0.094)	Data 0.000 (0.006)	Loss 0.6742 (0.7262)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][40/5011]	Time 0.043 (0.082)	Data 0.000 (0.005)	Loss 0.6742 (0.7245)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][50/5011]	Time 0.042 (0.074)	Data 0.000 (0.004)	Loss 0.7242 (0.7225)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][60/5011]	Time 0.043 (0.069)	Data 0.000 (0.003)	Loss 0.7242 (0.7219)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][70/5011]	Time 0.042 (0.065)	Data 0.000 (0.003)	Loss 0.7242 (0.7222)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][80/5011]	Time 0.042 (0.063)	Data 0.000 (0.002)	Loss 0.7242 (0.7219)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][90/5011]	Time 0.042 (0.060)	Data 0.000 (0.002)	Loss 0.7242 (0.7221)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 425, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 211, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 247, in train
+    for i, (data) in enumerate(train_loader):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 521, in __next__
+    data = self._next_data()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1203, in _next_data
+    return self._process_data(data)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 1229, in _process_data
+    data.reraise()
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/_utils.py", line 425, in reraise
+    raise self.exc_type(msg)
+ValueError: Caught ValueError in DataLoader worker process 3.
+Original Traceback (most recent call last):
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/worker.py", line 287, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/home/oem/CMU/VLR/hw2/voc_dataset.py", line 163, in __getitem__
+    ind = np.argpartition(box_scores, -self.top_n, axis=0)[-self.top_n:]
+  File "<__array_function__ internals>", line 5, in argpartition
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 839, in argpartition
+    return _wrapfunc(a, 'argpartition', kth, axis=axis, kind=kind, order=order)
+  File "/home/oem/.local/lib/python3.8/site-packages/numpy/core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+ValueError: kth(=-10) out of bounds (290)
+Epoch: [0][100/5011]	Time 0.042 (0.059)	Data 0.000 (0.002)	Loss 0.6742 (0.7213)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][110/5011]	Time 0.043 (0.057)	Data 0.000 (0.002)	Loss 0.7242 (0.7207)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][120/5011]	Time 0.044 (0.056)	Data 0.000 (0.002)	Loss 0.7242 (0.7197)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)

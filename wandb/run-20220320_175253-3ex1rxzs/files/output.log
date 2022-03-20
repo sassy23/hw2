@@ -1,0 +1,27 @@
+/home/oem/anaconda3/lib/python3.8/site-packages/torch/nn/functional.py:718: UserWarning: Named tensors and all their associated APIs are an experimental feature and subject to change. Please do not use them for anything important until they are released as stable. (Triggered internally at  /tmp/pip-req-build-pma2oi4d/c10/core/TensorImpl.h:1156.)
+  return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+Epoch: [0][0/156]	Time 8.566 (8.566)	Data 1.027 (1.027)	Loss 0.7027 (0.7027)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][10/156]	Time 0.468 (1.186)	Data 0.285 (0.332)	Loss 0.6974 (0.6996)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][20/156]	Time 0.468 (0.846)	Data 0.285 (0.310)	Loss 0.6931 (0.6973)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][30/156]	Time 0.468 (0.725)	Data 0.285 (0.302)	Loss 0.6903 (0.6954)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][40/156]	Time 0.468 (0.664)	Data 0.283 (0.299)	Loss 0.6877 (0.6938)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][50/156]	Time 0.482 (0.626)	Data 0.297 (0.296)	Loss 0.6850 (0.6923)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][60/156]	Time 0.465 (0.601)	Data 0.283 (0.295)	Loss 0.6827 (0.6909)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][70/156]	Time 0.469 (0.582)	Data 0.283 (0.294)	Loss 0.6800 (0.6896)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Epoch: [0][80/156]	Time 0.471 (0.569)	Data 0.288 (0.293)	Loss 0.6784 (0.6883)	Metric1 0.000 (0.000)	Metric2 0.000 (0.000)
+Traceback (most recent call last):
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 456, in <module>
+    main()
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 217, in main
+    train(train_loader, model, criterion, optimizer, epoch)
+  File "/home/oem/CMU/VLR/hw2/task_1.py", line 322, in train
+    wandb.log({"img": [wandb.Image(im)]})
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/wandb/sdk/data_types.py", line 1815, in __init__
+    self._initialize_from_data(data_or_path, mode)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/wandb/sdk/data_types.py", line 1914, in _initialize_from_data
+    data = vis_util.make_grid(data, normalize=True)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 28, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/oem/anaconda3/lib/python3.8/site-packages/torchvision/utils.py", line 96, in make_grid
+    height, width = int(tensor.size(2) + padding), int(tensor.size(3) + padding)
+IndexError: Dimension out of range (expected to be in range of [-1, 0], but got 2)
